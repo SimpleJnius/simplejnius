@@ -1,5 +1,7 @@
 from jnius import JavaClass, MetaJavaClass, JavaMultipleMethod, JavaStaticMethod
 
+__all__ = ("Futures",)
+
 
 class Futures(JavaClass, metaclass=MetaJavaClass):
     __javaclass__ = 'com/google/common/util/concurrent/Futures'
